@@ -1,0 +1,82 @@
+body{
+    height: 100vh;
+    background: rgb(20, 184, 94);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.subheading{
+    width: 640px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1{
+    font-family: monospace;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+h2{
+    font-family: monospace;
+    font-size: 1rem;
+   
+}
+
+main{
+    width: 640px;
+    height: 550px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 4px solid rgb(10, 10, 10);
+    perspective: 1000px;
+    margin-bottom: 0.5rem;
+}
+
+.memory-card{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border: 2px solid black;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.front, .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    
+}
+
+.front{
+    transform: rotateY(180deg);
+}
+
+.turn{
+    transform: rotateY(180deg);
+}
+
+
+button{
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: monospace;
+}
